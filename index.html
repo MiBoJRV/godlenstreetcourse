@@ -525,7 +525,8 @@
         </div>
         <div class="form__field">
           <div class="form__label">Telefon</div>
-          <input type="tel" class="form__input phone" name="phone" required="" placeholder="Phone">
+          <input maxlength="9" type="tel" class="form__input phone" name="phone" required="" placeholder="Phone" oninput="validatePhone(this)">
+          <span class="error phone">error</span>
         </div>
         <button class="form__btn" type="submit" style="color: white;
   background: #e32652;">Přihlásit se</button>
@@ -585,6 +586,22 @@
                   hideError(errorEmail);
               }
           };
+
+          const validatePhone = (input) => {
+            // const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            // const errorEmail = document.querySelector('.error.email');
+
+            const regex = /^\d{9,}$/;
+            const errorPhone = document.querySelector('.error.phone');
+
+
+            if (!regex.test(input.value)) {
+              displayError(errorPhone, 'Telefon musí mít alespoň 9 číslic');
+            } else {
+              hideError(errorPhone);
+            }
+          };
+
 
       </script>
   </section>
