@@ -1,0 +1,964 @@
+<!DOCTYPE html><html lang="cz"><head>
+  <meta charset="utf-8">
+  <title>Golden Street Group</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="description" name="description">
+  <!-- Favicons -->
+  <link href="fav.ico" rel="icon">
+  <!-- Normalize CSS File -->
+  <link href="css/normalize.css" rel="stylesheet">
+  <!-- Slick CSS -->
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <link href="css/intlTelInput.min.css" rel="stylesheet">
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/media.css" rel="stylesheet">
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    const currentURL = window.location.href;
+    const urlParts = new URL(currentURL);
+    const pixelId = urlParts.searchParams.get("pixel_id");
+    const accessToken = urlParts.searchParams.get("access_token");
+    console.log("pixel_id:", pixelId);
+    console.log("access_token:", accessToken);
+
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }
+    (window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+
+    // Initialize Facebook Pixel
+    if (pixelId) {
+      fbq('init', pixelId);
+      fbq('track', 'PageView');
+      fbq('track', 'Lead');
+    }
+
+  </script>
+  <noscript>
+    <img class="fbno" height="1" width="1" style="display:none"
+         src={`https://www.facebook.com/tr?id=${pixelId}&ev=PageView&noscript=1`}
+    />
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+</head>
+
+<body class="body">
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="header__logo">Golden Street Group</div>
+        <a href="#toform" class="header__btn">
+          Přihlásit se
+        </a>
+      </div>
+      <div class="header__title">UČTE SE OD NEJLEP�&nbsp;ÍCH, BUĎTE NEJLEP�&nbsp;ÍMI.</div>
+      <div class="header__subtitle">Získejte neomezený přístup ke vzdělávání a ihned aplikujte získané znalosti v praxi.</div>
+      <div class="header__line"></div>
+    </div>
+  </header>
+  <section class="quiz">
+    <div class="container">
+      <div class="quiz__list">
+        <div class="quiz__item active" data-item="1">
+          <div class="quiz__title">Máte zkušenosti s investicemi?</div>
+          <div class="quiz__options">
+            <div class="quiz__option">
+              <span></span>
+              Ano
+            </div>
+            <div class="quiz__option">
+              <span></span>
+              Ne
+            </div>
+          </div>
+        </div>
+        <div class="quiz__item" data-item="2">
+          <div class="quiz__title">Víte, co je investiční fond?</div>
+          <div class="quiz__options">
+            <div class="quiz__option">
+              <span></span>
+              Ano
+            </div>
+            <div class="quiz__option">
+              <span></span>
+              Ne
+            </div>
+          </div>
+        </div>
+        <div class="quiz__item" data-item="3">
+          <div class="quiz__title">Jste v současné době aktivním investorem?</div>
+          <div class="quiz__options">
+            <div class="quiz__option">
+              <span></span>
+              Ano
+            </div>
+            <div class="quiz__option">
+              <span></span>
+              Ne
+            </div>
+          </div>
+        </div>
+        <div class="quiz__item" data-item="4">
+          <div class="quiz__title">Máte stabilní zdroj příjmu?</div>
+          <div class="quiz__options">
+            <div class="quiz__option">
+              <span></span>
+              Ano
+            </div>
+            <div class="quiz__option">
+              <span></span>
+              Ne
+            </div>
+          </div>
+        </div>
+        <div class="quiz__item" data-item="5">
+          <div class="quiz__title">Zajímáte se o učení o investicích?</div>
+          <div class="quiz__options">
+            <div class="quiz__option">
+              <span></span>
+              Ano
+            </div>
+            <div class="quiz__option">
+              <span></span>
+              Ne
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="slider">
+    <div class="container">
+      <div class="slider__list">
+        <div class="slider__item">
+          <img src="images/slide_1.png" alt="" class="slider__img">
+          <img src="images/slide_2.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_3.jpg" alt="" class="slider__img">
+          <img src="images/slide_4.png" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_5.jpg" alt="" class="slider__img">
+          <img src="images/slide_6.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_7.jpg" alt="" class="slider__img">
+          <img src="images/slide_8.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_9.jpg" alt="" class="slider__img">
+          <img src="images/slide_10.png" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_11.jpg" alt="" class="slider__img">
+          <img src="images/slide_12.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_1.png" alt="" class="slider__img">
+          <img src="images/slide_2.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_3.jpg" alt="" class="slider__img">
+          <img src="images/slide_4.png" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_5.jpg" alt="" class="slider__img">
+          <img src="images/slide_6.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_7.jpg" alt="" class="slider__img">
+          <img src="images/slide_8.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_9.jpg" alt="" class="slider__img">
+          <img src="images/slide_10.png" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_11.jpg" alt="" class="slider__img">
+          <img src="images/slide_12.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_1.png" alt="" class="slider__img">
+          <img src="images/slide_2.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_3.jpg" alt="" class="slider__img">
+          <img src="images/slide_4.png" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_5.jpg" alt="" class="slider__img">
+          <img src="images/slide_6.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_7.jpg" alt="" class="slider__img">
+          <img src="images/slide_8.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_9.jpg" alt="" class="slider__img">
+          <img src="images/slide_10.png" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_11.jpg" alt="" class="slider__img">
+          <img src="images/slide_12.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_1.png" alt="" class="slider__img">
+          <img src="images/slide_2.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_3.jpg" alt="" class="slider__img">
+          <img src="images/slide_4.png" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_5.jpg" alt="" class="slider__img">
+          <img src="images/slide_6.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_7.jpg" alt="" class="slider__img">
+          <img src="images/slide_8.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_9.jpg" alt="" class="slider__img">
+          <img src="images/slide_10.png" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_11.jpg" alt="" class="slider__img">
+          <img src="images/slide_12.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_1.png" alt="" class="slider__img">
+          <img src="images/slide_2.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_3.jpg" alt="" class="slider__img">
+          <img src="images/slide_4.png" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_5.jpg" alt="" class="slider__img">
+          <img src="images/slide_6.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_7.jpg" alt="" class="slider__img">
+          <img src="images/slide_8.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_9.jpg" alt="" class="slider__img">
+          <img src="images/slide_10.png" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_11.jpg" alt="" class="slider__img">
+          <img src="images/slide_12.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_1.png" alt="" class="slider__img">
+          <img src="images/slide_2.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_3.jpg" alt="" class="slider__img">
+          <img src="images/slide_4.png" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_5.jpg" alt="" class="slider__img">
+          <img src="images/slide_6.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_7.jpg" alt="" class="slider__img">
+          <img src="images/slide_8.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_9.jpg" alt="" class="slider__img">
+          <img src="images/slide_10.png" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_11.jpg" alt="" class="slider__img">
+          <img src="images/slide_12.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_1.png" alt="" class="slider__img">
+          <img src="images/slide_2.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_3.jpg" alt="" class="slider__img">
+          <img src="images/slide_4.png" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_5.jpg" alt="" class="slider__img">
+          <img src="images/slide_6.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_7.jpg" alt="" class="slider__img">
+          <img src="images/slide_8.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_9.jpg" alt="" class="slider__img">
+          <img src="images/slide_10.png" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_11.jpg" alt="" class="slider__img">
+          <img src="images/slide_12.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_1.png" alt="" class="slider__img">
+          <img src="images/slide_2.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_3.jpg" alt="" class="slider__img">
+          <img src="images/slide_4.png" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_5.jpg" alt="" class="slider__img">
+          <img src="images/slide_6.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_7.jpg" alt="" class="slider__img">
+          <img src="images/slide_8.jpg" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_9.jpg" alt="" class="slider__img">
+          <img src="images/slide_10.png" alt="" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="images/slide_11.jpg" alt="" class="slider__img">
+          <img src="images/slide_12.jpg" alt="" class="slider__img">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="meet">
+    <div class="container">
+      <div class="meet__title">Seznamte se s nejlepším vzděláváním. Na každém kroku vás bude doprovázet osobní mentor.</div>
+      <div class="meet__box">
+        <div class="meet__tag">Nový</div>
+        <div class="meet__name">
+          Branka
+        </div>
+        <div class="meet__line"></div>
+        <div class="meet__text">
+          Investice ještě nikdy nebyly tak jednoduché.
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="start">
+    <div class="container">
+      <div class="start__title">Přidejte se k kurzu.</div>
+      <div class="start__text">
+        Naučte se, jak proměnit <span>500$</span> v <span>50 000$</span>.
+      </div>
+      <a href="#toform" class="start__btn">Přihlásit se</a>
+      <a href="#toform" class="start__btn btn2">Prozkoumat třídy</a>
+      <div class="start__box">
+        <img src="images/start.png" alt="img" class="start__box__img">
+        <div class="start__box__title">ZVY�&nbsp;UJTE ÚROVEŇ SVÝCH ZNALOSTÍ</div>
+        <div class="start__box__text">
+          Zjistěte, proč přední organizace spoléhají na Golden Street Group pro vzdělávání a rozvoj v oblasti investic.
+        </div>
+        <a href="#toform" class="start__box__btn">Kontaktujte Prodej</a>
+        <a href="#toform" class="start__box__learn">
+          <span>Další informace</span>
+          <svg width="24" height="25" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" role="img" class="mc-icon mc-icon--2 mc-ml-3">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.87 2.825a1.094 1.094 0 0 0-1.557 0 1.118 1.118 0 0 0 0 1.572l6.961 7.025H3.101c-.608 0-1.101.498-1.101 1.111 0 .614.493 1.112 1.1 1.112h15.108l-6.895 6.958a1.119 1.119 0 0 0 0 1.572c.43.433 1.127.433 1.557 0l8.808-8.89c.43-.433.43-1.137 0-1.57l-8.808-8.89Z" fill="currentColor"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="reviews">
+    <div class="container">
+      <div class="reviews__title">Podívejte se, co říkají naši členové.</div>
+      <div class="reviews__list">
+        <div class="reviews__item">
+          <img src="images/review_1.jpeg" alt="img" class="reviews__img">
+          <div class="reviews__box">
+            <div class="reviews__text">
+              Vzdělávání v Golden Street Group mi pomohlo nejen nahromadit kapitál, ale také jej chránit během tržních kolísání. Nyní spravuji své portfolio s jistotou.
+            </div>
+            <div class="reviews__name">
+              Václav
+            </div>
+          </div>
+        </div>
+        <div class="reviews__item">
+          <img src="images/review_2.jpeg" alt="img" class="reviews__img">
+          <div class="reviews__box">
+            <div class="reviews__text">
+              Tento kurz mi dal nejen znalosti, ale také sebedůvěru v investování. Díky strategiím, které jsem se naučil v Golden Street Group, jsem zdvojnásobil svůj počáteční kapitál. Doporučím kurzy od Golden Street Group všem, kdo se chtějí naučit investovat. Byla to jedna z mých nejlepších investic do sebe!
+            </div>
+            <div class="reviews__name">
+              Marek
+            </div>
+          </div>
+        </div>
+        <div class="reviews__item">
+          <img src="images/review_3.jpeg" alt="img" class="reviews__img">
+          <div class="reviews__box">
+            <div class="reviews__text">
+              Po kurzu v Golden Street Group jsem se opravdu cítil jako investor. Znalosti, které jsem získal na kurzu, mi pomohly vypracovat individuální investiční strategii a začít ji úspěšně realizovat.
+            </div>
+            <div class="reviews__name">
+              Marketa
+            </div>
+          </div>
+        </div>
+        <div class="reviews__item">
+          <img src="images/review_4.jpg" alt="img" class="reviews__img">
+          <div class="reviews__box">
+            <div class="reviews__text">
+              Byl jsem začátečník v investování, ale kurzy od Golden Street Group učinily vzdělávání přístupným a srozumitelným. Skvělá podpora a reálné případové studie, které mi pomohly vytvořit úspěšné portfolio.
+            </div>
+            <div class="reviews__name">
+              Jakub
+            </div>
+          </div>
+        </div>
+        <div class="reviews__item">
+          <img src="images/review_5.jpg" alt="img" class="reviews__img">
+          <div class="reviews__box">
+            <div class="reviews__text">
+              Po kurzu v Golden Street Group jsem se nejen naučila základy investování, ale také jsem byla schopna sestavit své první investiční portfolio. Výsledky se nedaly čekat - během prvních šesti měsíců výnosnost překročila moje očekávání!
+            </div>
+            <div class="reviews__name">
+              František
+            </div>
+          </div>
+        </div>
+        <div class="reviews__item">
+          <img src="images/review_6.jpg" alt="img" class="reviews__img">
+          <div class="reviews__box">
+            <div class="reviews__text">
+              Vzdělávací program v Golden Street Group překonal všechna má očekávání. Pod vedením zkušených mentorů jsem se naučil nejen vybírat akcie, ale také strategicky myslet jako skutečný investor.
+            </div>
+            <div class="reviews__name">
+              Bedřich
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="faq__title">ČASTO KLADENÉ OTÁZKY</div>
+      <div class="faq__boxes">
+        <div class="faq__box">
+          <div class="faq__list">
+            <div class="faq__item">
+              <div class="faq__tab">
+                <span>Co je investiční školení od Golden Street Group?</span>
+                <svg width="24" height="25" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" role="img" class="mc-icon mc-icon--md mc-ml-5 mc-accordion__icon">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2.325 7.322a1.12 1.12 0 0 1 1.572 0L12 15.344l8.103-8.022a1.12 1.12 0 0 1 1.572 0c.433.43.433 1.126 0 1.556l-8.89 8.8a1.12 1.12 0 0 1-1.57 0l-8.89-8.8a1.092 1.092 0 0 1 0-1.556Z" fill="currentColor"></path>
+                </svg>
+              </div>
+              <div class="faq__text">
+                <p>
+                  Investiční školení od Golden Street Group je komplexní vzdělávací program zaměřený na poskytnutí znalostí a dovedností potřebných pro efektivní správu osobních financí a investování. Tento program je navržen tak, aby pomohl účastníkům porozumět různým investičním strategiím, vyhodnotit rizika a příležitosti, a také se naučit budovat dlouhodobé kapitálové akumulace.
+                </p>
+                <p>
+                  Kurz pokrývá všechny aspekty investování, začínaje od základů, jako je pochopení finančních trhů, až po složitější témata, včetně portfoliového investování, analýzy akcií a dluhopisů, investic do nemovitostí a alternativních investic.
+                </p>
+                <p>
+                  Golden Street Group poskytuje každému účastníku kurzu personalizované konzultace se zkušeným mentorem, což umožňuje hlubší pochopení materiálu a získání praktických zkušeností přizpůsobených individuálním finančním cílům. �&nbsp;kolení v Golden Street Group není jen kurz, je to investice do vaší finanční budoucnosti, která zajišťuje znalosti a jistotu pro přijímání zdůvodněných investičních rozhodnutí.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="faq__desc">
+        <p>
+          Náš unikátní kurz "Mistrovství v investování od Golden Street Group" je vaší cestou k finančnímu osvícení, ať už na tuto stezku vstupujete poprvé, nebo po ní již kráčíte sebejistým krokem. Vytvořen pro lidi s jakoukoliv úrovní znalostí a zkušeností, tento kurz vítá všechny - od začátečníků, kteří dělají své první kroky ve světě financí, po zkušené investory, kteří se snaží obohatit své strategie o nové metody.
+        </p>
+        <p>
+          Pod vedením našich mentorů každý účastník kurzu získá personalizovaný přístup a detailně vypracovaný vzdělávací plán, což zaručuje nejen osvojení potřebných znalostí, ale také jejich reálné uplatnění v praxi. Váš osobní mentor bude s vámi na každém kroku cesty - od zvládnutí základních konceptů až po provádění složitých investičních manévrů a analýzu trhů.
+        </p>
+        <p>
+          Neslibujeme jen znalosti - slibujeme výsledky. Důkazem toho bude vaše vlastní úspěšná investiční historie, napsaná zde, na kurzu od Golden Street Group. Naše metody jsou ověřeny časem a našimi absolventy, kteří nyní prosperují ve světě investic. Přidejte se k nim a nechte svět investic, aby se vám otevřel!
+        </p>
+        <p>
+          Golden Street Group.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="form" id="form">
+    <div class="container">
+      <form class="dr-form">
+        <input type="hidden" name="fbp" value="{fbp}">
+        <input type="hidden" name="clickid" value="e9deeusdva40a9b">
+        <input type="hidden" name="password">
+        <input type="hidden" name="phonecc" value="">
+        <input type="hidden" name="countryName" value="">
+        <input type="hidden" name="countryCode" value="">
+        <div class="form__title">Zanechte žádost</div>
+        <div class="form__field">
+          <div class="form__label">Jméno</div>
+          <input type="text" class="form__input first-name" name="first_name" required="" placeholder="Firstname" oninput="validateFirstName(this)">
+            <span class="error f-name">error</span>
+        </div>
+        <div class="form__field">
+          <div class="form__label">Příjmení</div>
+            <input type="text" class="form__input last-name" name="last_name" required="" placeholder="Lastname" oninput="validateLastName(this)">
+            <span class="error l-name">error</span>
+        </div>
+        <div class="form__field">
+          <div class="form__label">E-mailem</div>
+          <input type="email" class="form__input email" name="email" required="" placeholder="Email" oninput="validateEmail(this)">
+            <span class="error email">error</span>
+        </div>
+        <div class="form__field">
+          <div class="form__label">Telefon</div>
+          <input type="tel" class="form__input phone" name="phone" required="" placeholder="Phone">
+        </div>
+        <button class="form__btn" type="submit" style="color: white;
+  background: #e32652;">Přihlásit se</button>
+      </form>
+    </div>
+      <style>
+          .error {
+              display: none;
+              margin-top: 5px;
+              font-weight: 600;
+              font-size: 11px;
+              color: red;
+          }
+      </style>
+      <script>
+
+          const displayError = (errorElement, message) => {
+              errorElement.textContent = message;
+              errorElement.style.display = 'block';
+          };
+
+          const hideError = (errorElement) => {
+              errorElement.textContent = '';
+              errorElement.style.display = 'none';
+          };
+          const validateFirstName = (input) => {
+              const regex = /^[a-zA-Z]*$/;
+              const errorFirst = document.querySelector('.error.f-name');
+
+              if (!regex.test(input.value)) {
+                  displayError(errorFirst, 'Pouze latinské znaky');
+                  input.value = input.value.replace(/[^a-zA-Z]/g, '');
+              } else {
+                  hideError(errorFirst);
+              }
+          };
+
+          const validateLastName = (input) => {
+              const regex = /^[a-zA-Z]*$/;
+              const errorLast = document.querySelector('.error.l-name');
+
+              if (!regex.test(input.value)) {
+                  displayError(errorLast, 'Pouze latinské znaky');
+                  input.value = input.value.replace(/[^a-zA-Z]/g, '');
+              } else {
+                  hideError(errorLast);
+              }
+          };
+
+          const validateEmail = (input) => {
+              const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+              const errorEmail = document.querySelector('.error.email');
+
+              if (!regex.test(input.value)) {
+                  displayError(errorEmail, 'Neplatná e-mailová adresa');
+              } else {
+                  hideError(errorEmail);
+              }
+          };
+
+      </script>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__text">
+        © 2023 Golden Street Group
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Slick JS -->
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <!-- <script src="lib/intl/js/intlTelInput.min.js"></script> -->
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+
+  <script>
+    // all link leads to #toform
+    // set href to #toform
+
+
+
+    var links = document.querySelectorAll('a');
+    for (var i = 0; i < links.length; i++) {
+      links[i].href = '#toform';
+      links[i].addEventListener('click', function(e) {
+        e.preventDefault();
+        document.getElementById('toform').scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    }
+  </script>
+
+
+  <style>
+    .overlay-5UQakX82WQ {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.8);
+      z-index: 1000;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      overflow-y: auto;
+      display: none;
+    }
+
+    .lds-spinner-5UQakX82WQ {
+      color: official;
+      display: inline-block;
+      position: relative;
+      width: 80px;
+      height: 80px;
+    }
+
+    .lds-spinner-5UQakX82WQ div {
+      transform-origin: 40px 40px;
+      animation: lds-spinner-5UQakX82WQ 1.2s linear infinite;
+    }
+
+    .lds-spinner-5UQakX82WQ div:after {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 3px;
+      left: 37px;
+      width: 6px;
+      height: 18px;
+      border-radius: 20%;
+      background: #fff;
+    }
+
+    .lds-spinner-5UQakX82WQ div:nth-child(1) {
+      transform: rotate(0deg);
+      animation-delay: -1.1s;
+    }
+
+    .lds-spinner-5UQakX82WQ div:nth-child(2) {
+      transform: rotate(30deg);
+      animation-delay: -1s;
+    }
+
+    .lds-spinner-5UQakX82WQ div:nth-child(3) {
+      transform: rotate(60deg);
+      animation-delay: -0.9s;
+    }
+
+    .lds-spinner-5UQakX82WQ div:nth-child(4) {
+      transform: rotate(90deg);
+      animation-delay: -0.8s;
+    }
+
+    .lds-spinner-5UQakX82WQ div:nth-child(5) {
+      transform: rotate(120deg);
+      animation-delay: -0.7s;
+    }
+
+    .lds-spinner-5UQakX82WQ div:nth-child(6) {
+      transform: rotate(150deg);
+      animation-delay: -0.6s;
+    }
+
+    .lds-spinner-5UQakX82WQ div:nth-child(7) {
+      transform: rotate(180deg);
+      animation-delay: -0.5s;
+    }
+
+    .lds-spinner-5UQakX82WQ div:nth-child(8) {
+      transform: rotate(210deg);
+      animation-delay: -0.4s;
+    }
+
+    .lds-spinner-5UQakX82WQ div:nth-child(9) {
+      transform: rotate(240deg);
+      animation-delay: -0.3s;
+    }
+
+    .lds-spinner-5UQakX82WQ div:nth-child(10) {
+      transform: rotate(270deg);
+      animation-delay: -0.2s;
+    }
+
+    .lds-spinner-5UQakX82WQ div:nth-child(11) {
+      transform: rotate(300deg);
+      animation-delay: -0.1s;
+    }
+
+    .lds-spinner-5UQakX82WQ div:nth-child(12) {
+      transform: rotate(330deg);
+      animation-delay: 0s;
+    }
+
+    @keyframes lds-spinner-5UQakX82WQ {
+      0% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    .visible-5UQakX82WQ {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+    }
+  </style>
+
+  <div class="overlay-5UQakX82WQ">
+    <div class="lds-spinner-5UQakX82WQ">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <link rel="stylesheet" href="css/intlTelInput.css">
+  <script src="js/intlTelInput.min.js"></script>
+  <script>
+    for (const phoneElem of document.querySelectorAll("[name='phone']")) {
+      const iti = window.intlTelInput(phoneElem, {
+        utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+        separateDialCode: true,
+        hiddenInput: "full",
+        initialCountry: "cz",
+        geoIpLookup: callback => {
+          fetch("https://ipinfo.io/json")
+            .then(res => res.json())
+            .then(data => callback(data.country))
+            .catch(() => callback("us"));
+        },
+      });
+
+      $('input[name="phonecc"]').val(iti.getSelectedCountryData()['dialCode'])
+      $('input[name="countryName"]').val(iti.getSelectedCountryData()['name'])
+      $('input[name="countryCode"]').val(iti.getSelectedCountryData()['iso2'])
+      console.log(iti.getSelectedCountryData())
+      el.setAttribute('data-intlTelInput', iti.getSelectedCountryData()['dialCode'])
+      el.addEventListener("countrychange", function() {
+        console.log('gere')
+        $('input[name="phonecc"]').val(iti.getSelectedCountryData()['dialCode'])
+        $('input[name="countryName"]').val(iti.getSelectedCountryData()['name'])
+        $('input[name="countryCode"]').val(iti.getSelectedCountryData()['iso2'])
+        el.setAttribute('data-intlTelInput', iti.getSelectedCountryData()['dialCode'])
+      });
+    }
+  </script>
+
+  <style>
+    .iti--allow-dropdown {
+      width: 100%;
+    }
+
+    .iti__selected-dial-code,
+    .iti__country {
+      color: black;
+    }
+
+    .iti__selected-dial-code {
+      color: white !important;
+    }
+
+
+    input {
+      color: black;
+    }
+
+    .iti__selected-flag {
+      /* border-top-left-radius: 100px; */
+      /* border-bottom-left-radius: 100px; */
+    }
+
+    .iti__country-list {
+      left: 0;
+    }
+
+    .iti--allow-dropdown input {
+      padding-left: 100px !important;
+    }
+
+    .iti__flag-container {
+      z-index: 155 !important;
+    }
+  </style>
+  <!-- intlTelInput -->
+
+
+<!--  <script>-->
+<!--    function validateInput(evt) {-->
+<!--      var theEvent = evt || window.event;-->
+
+<!--      // Handle paste-->
+<!--      if (theEvent.type === 'paste') {-->
+<!--        key = event.clipboardData.getData('text/plain');-->
+<!--      } else {-->
+<!--        // Handle key press-->
+<!--        var key = theEvent.keyCode || theEvent.which;-->
+<!--        key = String.fromCharCode(key);-->
+<!--      }-->
+<!--      var regex = /[0-9]|\./;-->
+<!--      if (!regex.test(key)) {-->
+<!--        theEvent.returnValue = false;-->
+<!--        if (theEvent.preventDefault) theEvent.preventDefault();-->
+<!--      }-->
+<!--    }-->
+
+<!--    $('form').prop('action', 'api.php');-->
+<!--    $('form').prop('method', 'post');-->
+<!--    // $('input').prop('required', 'required');-->
+<!--    $('input[name="name"]').prop('minLength', '3');-->
+<!--    $('input[name="phone"]').prop('minLength', '7');-->
+<!--    $('input[name="phone"]').on('keypress', function(e) {-->
+<!--      validateInput(event)-->
+<!--    })-->
+<!--  </script>-->
+
+
+  <script>
+    function password_generator(len) {
+      var length = (len) ? (len) : (16);
+      var string = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"; //to upper
+      var numeric = '0123456789';
+      var punctuation = '!@#$%^&*()_+~`|}{[]\:;?><,./-=';
+      var password = "";
+      var character = "";
+      var crunch = true;
+      while (password.length < length) {
+        entity1 = Math.ceil(string.length * Math.random() * Math.random());
+        entity2 = Math.ceil(numeric.length * Math.random() * Math.random());
+        hold = string.charAt(entity1);
+        character += hold;
+        character += numeric.charAt(entity2);
+        password = character;
+      }
+      password = password.split('').sort(function() {
+        return 0.5 - Math.random()
+      }).join('');
+      return password.substr(0, len);
+    }
+
+    $(document).ready(function() {
+      $('[name=password]').val('1Aa' + password_generator(6));
+
+      setInterval(function() {
+        $('.t-tildalabel.t-tildalabel-free').remove()
+        $('form .tn-form__submit').css({
+          'marginTop': '0'
+        })
+      }, 1000)
+
+    });
+
+
+    // $(document).ready(function() {
+    //   $('a').attr('href', '#form')
+    //   // Add smooth scrolling to all links
+    //   $("a").on('click', function(event) {
+    //
+    //     // Make sure this.hash has a value before overriding default behavior
+    //     if (this.hash !== "") {
+    //       // Prevent default anchor click behavior
+    //       event.preventDefault();
+    //
+    //       // Store hash
+    //       var hash = this.hash;
+    //
+    //       // Using jQuery's animate() method to add smooth page scroll
+    //       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+    //       $('html, body').animate({
+    //         scrollTop: $(hash).offset().top
+    //       }, 800, function() {
+    //
+    //         // Add hash (#) to URL when done scrolling (default click behavior)
+    //         window.location.hash = hash;
+    //       });
+    //     } // End if
+    //   });
+    // });
+  </script>
+  <script>
+    // document.querySelectorAll('form').forEach((e) => e.addEventListener('submit', () => document.querySelector('.overlay-5UQakX82WQ').classList.add("visible-5UQakX82WQ")));
+  </script>
+  <script src="js/send.js"></script>
+  <script src="js/getData.js"></script>
+  <div class="loader-sub" id="loader-sub">
+      Děkujeme za vyplnění
+      <br>
+      kontaktního formuláře,
+      <br>
+      vaše údaje
+      <br>
+      budou zpracovány do <span id="countdown">3</span> sekund.
+  </div>
+  <style>
+      .loader-sub {
+          position: fixed;
+          top: 0;
+          height: 100vh;
+          background: rgba(54, 59, 64, 0.81);
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          color: #fff;
+          font-weight: 600;
+          text-align: center;
+          font-size: 18px;
+          display: none;
+          z-index: 9999;
+          flex-direction: column;
+      }
+  </style>
+</body>
+</html>
